@@ -64,12 +64,14 @@ function renderFilms(array, element) {
 
     array.forEach((film) => {
         $newItem += `
-        <li style="width: 400px;">
-        <img src='${film.Poster}' width="380" alt="sjhas" >
-        <h2>${film.Title}</h2>
-        <p>${film.id}</p>
-        <a href='${film.link}'>See video</a>
-        </li>
+        <div class="card">
+            <li style="width: 400px;">
+                <img src='${film.Poster}' width="380" alt="Downloading" >
+                <h2>${film.Title}</h2>
+                <p>Id: ${film.id}</p>
+                <a href='${film.link}'>See Film</a>
+            </li>
+        </div>
         `;
     });
     element.innerHTML = $newItem;
