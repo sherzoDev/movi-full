@@ -168,7 +168,7 @@ select {
     color: blueviolet;
 }
 
-@media only screen and (min-width:320px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
     #form {
         display: flex;
         justify-content: center;
