@@ -67,9 +67,11 @@ function renderFilms(array, element) {
         <div class="card">
             <li style="width: 400px;">
                 <img class="formImg" src='${film.Poster}' width="380" alt="Downloading" >
-                <h2 class="formtitle">${film.Title}</h2>
-                <p class="formId">Id: ${film.id}</p>
-                <a class="formLink" href='${film.link}'>See Film</a>
+                <div class="box">
+                    <h2 class="formtitle">${film.Title}</h2>
+                    <p class="formId"><span class="id">Id:</span> ${film.id}</p>
+                    <a class="formLink" target="blank" href='${film.link}'>See Film</a>
+                </div>
             </li>
         </div>
         `;

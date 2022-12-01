@@ -104,6 +104,8 @@ select {
 }
 
 .card {
+    width: 400px;
+    height: 800px;
     margin: 0;
     padding: 0;
     margin-bottom: 100px;
@@ -127,19 +129,58 @@ select {
 }
 
 .formImg {
+    width: 400px;
+    height: auto;
+}
 
+#box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .formtitle {
-
+    word-wrap: wrap;
 }
 
-.formId {
-
+.box {
+    padding: 20px;
 }
 
 .formLink {
     text-decoration: none;
-    padding: 20px;
     border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    background-color: green;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.formLink:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.id {
+    color: blueviolet;
+}
+
+@media only screen and (min-width:320px) {
+    #form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .formInput {
+        margin-bottom: 20px;
+    }
+
+    select {
+        margin-bottom: 20px;
+    }
 }
