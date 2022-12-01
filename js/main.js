@@ -66,10 +66,10 @@ function renderFilms(array, element) {
         $newItem += `
         <div class="card">
             <li style="width: 400px;">
-                <img src='${film.Poster}' width="380" alt="Downloading" >
-                <h2>${film.Title}</h2>
-                <p>Id: ${film.id}</p>
-                <a href='${film.link}'>See Film</a>
+                <img class="formImg" src='${film.Poster}' width="380" alt="Downloading" >
+                <h2 class="formtitle">${film.Title}</h2>
+                <p class="formId">Id: ${film.id}</p>
+                <a class="formLink" href='${film.link}'>See Film</a>
             </li>
         </div>
         `;
